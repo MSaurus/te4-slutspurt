@@ -1,0 +1,18 @@
+h1 Edit User
+
+form action="/users/#{user['id']}/edit" method="post"
+  label for="firstName" First Name:
+  input type="text" name="firstName" value="#{user['first_name']}"/
+
+  label for="lastName" Last Name:
+  input type="text" name="lastName" value="#{user['last_name']}"/
+
+  label for="email" Email:
+  input type="value" name="email" value="#{credential['email']}"/
+
+  label for="password" Password:
+  input type="password" name="password" value="#{credential['password']}"/
+
+  input type="hidden" name="userid" value="#{credential['user_id']}"/
+
+  button type="submit" Submit
